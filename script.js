@@ -13,12 +13,13 @@ addBtn.addEventListener(`click`, () => {
     // newTask.textContent = "new task through DOM"
     document.querySelector(`.taskContainer`).appendChild(newTask);
 
-    newTask.classList.add(`tasks`, `p-2`, `flex`, `justify-center`);
+    newTask.classList.add(`tasks`, `p-2`, `flex`, `justify-center`, `space-x-2`);
+    // newTask.classList.add(`rounded-md`, `w-96`, `bg-slate-300`, `text-black`);
 
     newTask.appendChild(newToDoTask);
     newToDoTask.value = userTask.toString();
     newToDoTask.setAttribute("readonly", "readonly");
-    newToDoTask.classList.add(`p-2`);
+    newToDoTask.classList.add(`p-2`, `rounded-md`, `w-96`, `bg-slate-300`, `text-black`);
 
     newBtnEdit.textContent = "EDIT";
     newBtnEdit.classList.add(`btnEdit`, `bg-green-400`, `w-24`, `rounded-md`, `ml-5`);
