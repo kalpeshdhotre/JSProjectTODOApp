@@ -8,22 +8,23 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-slate-600">
-        <div class="text-5xl text-sky-400 justify-center flex p-20 border-4">
+        <div class="text-5xl text-sky-400 justify-center flex p-20">
             <h1>TO DO App</h1>
         </div>
-        <div class="w-auto m-auto flex justify-center border-4">
-            <div class="container border-2 border-red-600 flex justify-center p-3">
-                <div class="creatNewTask ">
-                    <input class="w-96" type="text" />
+        <div class="w-auto m-auto flex justify-center mb-10 ml">
+            <div class="container flex justify-center p-3">
+                <div class="creatNewTask">
+                    <input class="userTask w-96" type="text" />
                     <button class="addBtn bg-red-400 w-24 rounded-md">Add</button>
                 </div>
-                
             </div>
         </div>
-        <div class="tasks p-2 border-2 flex justify-center space-x-2">
-            <input class="p-1" type="text" placeholder="This is test task">
-            <button class="btnEdit bottom-1 bg-slate-300 rounded-sm w-24 text-lg">Edit</button>
-            <button class="btnDelete bottom-1 bg-slate-300 rounded-sm w-24 text-lg">Delete</button>
+        <div class="taskContainer">
+            <!-- <div class="tasks p-2 flex justify-center space-x-2">
+                <input class="p-1" type="text" placeholder="This is test task">
+                <button class="btnEdit bottom-1 bg-slate-300 rounded-sm w-24 text-lg">Edit</button>
+                <button class="btnDelete bottom-1 bg-slate-300 rounded-sm w-24 text-lg">Delete</button>
+            </div> -->
         </div>
     </body>
     <script src="./script.js"></script>
