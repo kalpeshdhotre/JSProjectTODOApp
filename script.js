@@ -40,12 +40,16 @@ addBtn.addEventListener(`click`, () => {
     newBtnEdit.addEventListener(`click`, () => {
         console.log(`Edit Click Test Ok`);
         if (newBtnEdit.textContent == `EDIT`) {
-            newToDoTask.removeAttribute("readonly");
+            newToDoTask.removeAttribute("readonly");            
             newToDoTask.focus();
             newBtnEdit.textContent = `SAVE`;
+            newBtnEdit.classList.remove(`bg-green-400`);
+            newBtnEdit.classList.add(`bg-blue-400`);
         } else {
             newToDoTask.setAttribute("readonly", "readonly");
             newBtnEdit.textContent = `EDIT`;
+            newBtnEdit.classList.remove(`bg-blue-400`);
+            newBtnEdit.classList.add(`bg-green-400`);
         }
     });
 });
