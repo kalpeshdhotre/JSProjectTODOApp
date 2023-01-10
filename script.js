@@ -2,7 +2,7 @@ let addBtn = document.querySelector(`.addBtn`);
 // let deleteBtn = document.querySelector(`.btnDelete`);
 
 addBtn.addEventListener(`click`, () => {
-    // read the task entered by user
+    // read the task entered by user if empty then show message or continue
     if (!document.querySelector(`.userTask`).value == "") {
         let userTask = document.querySelector(`.userTask`).value;
         const newTask = document.createElement("div");
